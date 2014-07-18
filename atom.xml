@@ -2,22 +2,22 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Sugam Anand]]></title>
-  <link href="www.sugamanand.in/atom.xml" rel="self"/>
-  <link href="www.sugamanand.in/"/>
-  <updated>2014-07-18T21:46:24+05:30</updated>
-  <id>www.sugamanand.in/</id>
+  <link href="http://www.sugamanand.in/atom.xml" rel="self"/>
+  <link href="http://www.sugamanand.in/"/>
+  <updated>2014-07-18T22:57:39+05:30</updated>
+  <id>http://www.sugamanand.in/</id>
   <author>
     <name><![CDATA[Sugam Anand]]></name>
-    
+    <email><![CDATA[sugamanandymc1@gmail.com]]></email>
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
   
   <entry>
     <title type="html"><![CDATA[Hello World !]]></title>
-    <link href="www.sugamanand.in/blog/2014/07/15/first%20post/"/>
+    <link href="http://www.sugamanand.in/blog/2014/07/15/first%20post/"/>
     <updated>2014-07-15T00:00:00+05:30</updated>
-    <id>www.sugamanand.in/blog/2014/07/15/first post</id>
+    <id>http://www.sugamanand.in/blog/2014/07/15/first post</id>
     <content type="html"><![CDATA[<p>   This is my first foray into blogging. I pondered over various blogging platforms like wordpress, tumblr etc. But it was &lsquo;octopress&rsquo; that won my heart. A perfect blogging engine (not exactly) for technology lovers. Getting started phase is a little tricky but then onwards using it is a piece of cake. For people worrying about hosting octopress sites, I used &lsquo;github pages&rsquo; for hosting this. If you have a purchased a domain name then you can use it to redirect yourself to your &lsquo;username.github.io&rsquo; by configuring a &lsquo;cname&rsquo; or &lsquo;aname&rsquo; entry with your DNS provider and you can use <a href="www.disqus.com">disqus</a> for adding functionality of comments for your blog. I am still exploring octopress and its plugins. So do expect some changes in the design and layout.</p>
 
 <p>The reason for choosing octopress is that it is based on, &lsquo;jekyll&rsquo;, a simple, static site generator. I mean, no dynamic pages generation from databases. So sites are faster to load and a simple http server can host Jekyll sites. Security wise, since everything on server just html, javascript and css files so it is more secure also.
