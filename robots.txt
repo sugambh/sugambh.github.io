@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: 
 
-Sitemap: http://sugambh.github.io/sitemap.xml 
+Sitemap: www.sugamanand.in/sitemap.xml 
