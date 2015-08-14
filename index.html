@@ -1,322 +1,188 @@
-
 <!DOCTYPE html>
-<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
-<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
-<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <title>Sugam Anand</title>
-  <meta name="author" content="Sugam Anand">
 
-  
-  <meta name="description" content="It happens that sometimes you need a web server for testing some application or you just want to share some directory while working on a project and &hellip;">
-  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-  <!-- http://t.co/dKP3o1e -->
-  <meta name="HandheldFriendly" content="True">
-  <meta name="MobileOptimized" content="320">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sugam Anand</title>
 
-  
-  <link rel="canonical" href="http://www.sugamanand.in">
-  <link href="/favicon.png" rel="icon">
-  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
-  <link href="/atom.xml" rel="alternate" title="Sugam Anand" type="application/atom+xml">
-  <script src="/javascripts/modernizr-2.0.js"></script>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
-  <script src="/javascripts/octopress.js" type="text/javascript"></script>
-  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
-<link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
-<link href="//fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+    <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
-  
+    <!-- Custom CSS -->
+    <link href="css/freelancer.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
 </head>
 
-<body   >
-  <header role="banner"><hgroup>
-  <h1><a href="/">Sugam Anand</a></h1>
-  
-    <h2>Musings on life and technology</h2>
-  
-</hgroup>
+<body id="page-top" class="index">
 
-</header>
-  <nav role="navigation"><ul class="subscription" data-subscription="rss">
-  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
-  
-</ul>
-  
-<form action="https://www.google.com/search" method="get">
-  <fieldset role="search">
-    <input type="hidden" name="q" value="site:www.sugamanand.in" />
-    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
-  </fieldset>
-</form>
-  
-<ul class="main-navigation">
-  <li><a href="/">Blog</a></li>
-  <li><a href="/blog/archives">Archives</a></li>
-</ul>
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#page-top">Sugam Anand</a>
+            </div>
 
-</nav>
-  <div id="main">
-    <div id="content">
-      <div class="blog-index">
-  
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2014/07/19/a-simple-web-server-with-python/">A Simple Web Server</a></h1>
-    
-    
-      <p class="meta">
-        
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                  
+                    <li class="page-scroll">
+                        <a href="#about">About</a>
+                    </li>
+                   
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
 
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2014-07-19T18:30:10+05:30" pubdate data-updated="true">Jul 19<sup>th</sup>, 2014</time>
-        
-           | <a href="/blog/2014/07/19/a-simple-web-server-with-python/#disqus_thread"
-             data-disqus-identifier="http://www.sugamanand.in/blog/2014/07/19/a-simple-web-server-with-python/">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>It happens that sometimes you need a web server for testing some application or you just want to share some directory while working on a project and you don&rsquo;t want to configure apache server for such things or apache seems like an overkill. Python comes with a built in HTTP server module. By instantiating the server you can make any directory in your system into web directory.
-Navigate to the directory which you want to serve.</p>
-
-<p><strong><strong> In python 2.x </strong></strong>, you can use SimpleHTTPServer module</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>python -m SimpleHTTPServer [port]</span></code></pre></td></tr></table></div></figure>
-
-
-<p>if you don&rsquo;t specify any port than server will start at port 8000.</p>
-
-<p><strong><strong>In python 3.x </strong></strong>, this is little simpler to write</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>python -m http.server [port]</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Note:</p>
-
-<ul>
-<li>This can handle only one request at a time and behaves like single threaded. Perhaps, you may want to write a script to make it multithreaded.</li>
-<li>It is slow (I hope you got the point of being simple web server)</li>
-<li>Sometimes causes timeout errors when loading JavaScript AMD modules using RequireJS.</li>
-</ul>
-
-
-<p>Alternatively you may want to try <a href="https://www.npmjs.org/package/http-server">http-server</a>, a simplest NodeJS server</p>
-
-<p>Installation</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>$ npm install http-server</span></code></pre></td></tr></table></div></figure>
-
-
-<p>starting the server</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>http-server [path] [options]</span></code></pre></td></tr></table></div></figure>
-
-
-<p>path : the directory path</p>
-
-<p>and following options can be given</p>
-
-<pre><code>-p The port number to listen on [8080]
--a The host address to bind to [localhost]
--i Display directory index pages [True]
--s or --silent Silent mode won't log to the console
--h or --help Displays help message and exits
-</code></pre>
-
-<p><code>http-server</code> can have parallel connections and works like a charm !.</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2014/07/15/first%20post/">Hello World !</a></h1>
-    
-    
-      <p class="meta">
-        
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <img class="img-responsive img-circle"  src="img/profile.jpg" width="160" height="160"alt="">
+                    <div class="intro-text">
+                        <span class="name">Hi !</span>
+                        <hr class="star-light">
+                        <span class="skills">Web Developer - ML Enthusiast </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
 
 
 
+    <!-- About Section -->
+    <section class="success" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>About</h2>
+                    <hr class="star-light">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-lg-offset-2">
+                    <p>
+                    	I am a full stack developer having a experience in web application development. Over the years i have worked on various frameworks and languages. I have expertise in Django, Flask in python and YII framework in php. 
+                    </p>
+                </div>
+                <div class="col-lg-4">
+                    <p>
+                    	Apart from developing backend, i have equal experience in building front ends. My skill set inlcudes html, css , javascript and bootstrap. Apart from web development, i am Machine learning and data science enthusiast.
+                </div>
+             
+            </div>
+        </div>
+    </section>
 
 
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="footer-above">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col col-md-4">
+                        <h3>Location</h3>
+                        <p>201, Teachers Colony<br>Koramangala, Bangalore</p>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h3>Around the Web</h3>
+                        <ul class="list-inline">
+                            <li>
+                                <a href="https://www.facebook.com/sugam.anand.3" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://www.google.com/+sugamanand3" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/sugambh" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://in.linkedin.com/in/sugambh" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
+                            </li>
+                           
+                        </ul>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h3>Contact Me</h3>
+                        <p> sugamanand3@gmail.com </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-below">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        Copyright &copy; Sugam Anand 2015
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-
-
-  
-
-
-<time datetime="2014-07-15T00:00:00+05:30" pubdate data-updated="true">Jul 15<sup>th</sup>, 2014</time>
-        
-           | <a href="/blog/2014/07/15/first%20post/#disqus_thread"
-             data-disqus-identifier="http://www.sugamanand.in/blog/2014/07/15/first%20post/">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>   This is my first foray into blogging. I pondered over various blogging platforms like wordpress, tumblr etc. But it was <a href="octopress.org">octopress</a> that won my heart. A perfect blogging engine for geeks. Getting started phase is a little tricky but then onwards using it is a piece of cake. For people worrying about hosting octopress sites, I used github pages for hosting this. If you have a purchased a domain name then you can use it to redirect yourself to your &lsquo;username.github.io&rsquo; by configuring a &lsquo;cname&rsquo; or &lsquo;aname&rsquo; entry with your DNS provider and you can use <a href="www.disqus.com">disqus</a> for adding functionality of comments for your blog. I am still exploring octopress and its plugins. So do expect some changes in the design and layout.</p>
-
-<p>The reason for choosing octopress is that it is based on, <a href="jekyllrb.com">jekyll</a>, a simple, static site generator. I mean, no dynamic pages generation from databases. So sites are faster to load and a simple http server can host Jekyll sites. Security wise, since everything on server just html, javascript and css files so it is more secure also.
-I would personally recommend this to everyone who likes to use commandline for doing stuff, even blogging. So what are you waiting for !, try it :)</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  <div class="pagination">
-    
-    <a href="/blog/archives">Blog Archives</a>
-    
-  </div>
-</div>
-<aside class="sidebar">
-  
-    <section>
-  <h1>Recent Posts</h1>
-  <ul id="recent_posts">
-    
-      <li class="post">
-        <a href="/blog/2014/07/19/a-simple-web-server-with-python/">A Simple Web Server</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2014/07/15/first%20post/">Hello World !</a>
-      </li>
-    
-  </ul>
-</section>
-
-<section>
-  <h1>GitHub Repos</h1>
-  <ul id="gh_repos">
-    <li class="loading">Status updating&#8230;</li>
-  </ul>
-  
-  <a href="https://github.com/sugambh">@sugambh</a> on GitHub
-  
-  <script type="text/javascript">
-    $(document).ready(function(){
-        if (!window.jXHR){
-            var jxhr = document.createElement('script');
-            jxhr.type = 'text/javascript';
-            jxhr.src = '/javascripts/libs/jXHR.js';
-            var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(jxhr, s);
-        }
-
-        github.showRepos({
-            user: 'sugambh',
-            count: 0,
-            skip_forks: true,
-            target: '#gh_repos'
-        });
-    });
-  </script>
-  <script src="/javascripts/github.js" type="text/javascript"> </script>
-</section>
-
-
-
-<section class="googleplus">
-  <h1>
-    <a href="https://plus.google.com/sugamanandymc1?rel=author">
-      <img src="http://www.google.com/images/icons/ui/gprofile_button-32.png" width="32" height="32">
-      Google+
-    </a>
-  </h1>
-</section>
-
-
-
-  
-</aside>
-
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <div class="scroll-top page-scroll visible-xs visible-sm">
+        <a class="btn btn-primary" href="#page-top">
+            <i class="fa fa-chevron-up"></i>
+        </a>
     </div>
-  </div>
-  <footer role="contentinfo"><p>
-  Copyright &copy; 2014 - Sugam Anand -
-  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
-</p>
 
-</footer>
-  
-
-<script type="text/javascript">
-      var disqus_shortname = 'sugamanandin';
-      
-        
-        var disqus_script = 'count.js';
-      
-    (function () {
-      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-      dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
-      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    }());
-</script>
+ 
 
 
+    
 
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) {return;}
-  js = d.createElement(s); js.id = id; js.async = true;
-  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
 
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
 
+    <!-- Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/cbpAnimatedHeader.js"></script>
 
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
 
-
-  <script type="text/javascript">
-    (function(){
-      var twitterWidgets = document.createElement('script');
-      twitterWidgets.type = 'text/javascript';
-      twitterWidgets.async = true;
-      twitterWidgets.src = '//platform.twitter.com/widgets.js';
-      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
-    })();
-  </script>
-
-
-
-
+    <!-- Custom Theme JavaScript -->
+    <script src="js/freelancer.js"></script>
 
 </body>
+
 </html>
